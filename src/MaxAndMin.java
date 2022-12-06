@@ -5,10 +5,10 @@ public class MaxAndMin {
         int[] maxArray = new int[10];
         int max = 0;
         int min = 100;
-        //Random rand = new Random();
-       // int num = rand.nextInt(10) + 1;
+        int sum = 0;
         for (int i= 0; i < maxArray.length ; i++){
-           maxArray[i] = (int) (Math.random()*100 + 1);// maxArray[i] = num;
+           maxArray[i] = (int) (Math.random()*100 + 1);
+           sum += maxArray[i];
             if(maxArray[i] > max){
                 max = maxArray[i];
             }
@@ -19,5 +19,6 @@ public class MaxAndMin {
         }
         System.out.println("The Max number in this array is : " + max);
         System.out.println("The Min number in this array is :" + min);
+        System.out.println("The Sum of the elements of the array is:" + sum);
     }
 }

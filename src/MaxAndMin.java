@@ -19,6 +19,6 @@ public class MaxAndMin {
         }
         System.out.println("The Max number in this array is : " + max);
         System.out.println("The Min number in this array is :" + min);
-        System.out.println("The Sum of the elements of the array is:" + sum);
+        System.out.println("The Sum of the elements of the array is :" + sum);
     }
 }

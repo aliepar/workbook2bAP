@@ -9,9 +9,11 @@ public class MaxTwoDimArray {
             }
         }
         //finding Max
+        int sum = 0;
         int max =TwoDimArray[0][0];
         for(int i = 0; i < TwoDimArray.length; i++){
             for (int j= 0; j < TwoDimArray[i].length; j++) {
+                sum += TwoDimArray[i][j];
                 if (TwoDimArray[i][j] > max){
                     max = TwoDimArray[i][j];
                 }
@@ -28,5 +30,6 @@ public class MaxTwoDimArray {
             }
         }
         System.out.println("Min is :" + min);
+        System.out.println("The sum is :" + sum);
     }
 }

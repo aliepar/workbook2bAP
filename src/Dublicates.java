@@ -1,11 +1,9 @@
 import java.util.Random;
-
 public class Dublicates {
     public static void main(String[] args) {
         int[] arrayOne = new int[10];
         int[] arrayTwo = new int[10];
         Random newNumber = new Random();
-
         //filling first array with random number
         for (int i = 0; i < arrayOne.length; i++) {
             arrayOne[i] = newNumber.nextInt(20) +1;
@@ -26,7 +24,6 @@ public class Dublicates {
                     sameValue = arrayOne[i];
                     System.out.println("The same value is : " + sameValue);
                 }
-
             }
         }
     }
